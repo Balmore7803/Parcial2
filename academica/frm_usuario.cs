@@ -52,7 +52,6 @@ namespace academica
                 txtNombreUsuarios.Text = miTabla.Rows[posicion].ItemArray[3].ToString();
                 txtDireccionUsuarios.Text = miTabla.Rows[posicion].ItemArray[4].ToString();
                 txtTelefonoUsuarios.Text = miTabla.Rows[posicion].ItemArray[5].ToString();
-                lblRegistrosUsuarios.Text = (posicion + 1) + " de " + miTabla.Rows.Count;
 
                 lblRegistrosUsuarios.Text = (posicion + 1) + " de " + miTabla.Rows.Count;
             }
@@ -92,7 +91,7 @@ namespace academica
 
         private void btnPrimeroUsuarios_Click(object sender, EventArgs e)
         {
-            posicion = miTabla.Rows.Count - 1;
+            posicion = miTabla.Rows.Count - 0;
             mostrarDatosUsuarios();
         }
 

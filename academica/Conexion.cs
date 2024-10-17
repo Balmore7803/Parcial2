@@ -97,7 +97,7 @@ namespace academica {
             else if (datos[0] == "modificar")
             {
                 sql = "UPDATE usuarios SET usuario='" + datos[2] + "', clave='" + datos[3] + "', nombre='" + datos[4] + "', direccion='" + datos[5] + "', telefono='" +
-                     "' WHERE idUsuarios=" + datos[1];
+                     "' WHERE idUsuario=" + datos[1];
             }
             else if (datos[0] == "eliminar")
             {
