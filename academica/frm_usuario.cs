@@ -38,7 +38,7 @@ namespace academica
             ds = objConexion.obtenerDatos();
             miTabla = ds.Tables["usuarios"];
             miTabla.PrimaryKey = new DataColumn[] { miTabla.Columns["idUsuarios"] };
-            grdDatosDocentes.DataSource = miTabla;
+            grdDatosUsuarios.DataSource = miTabla;
             mostrarDatosUsuarios();
         }
         private void mostrarDatosUsuarios()
@@ -117,7 +117,7 @@ namespace academica
                     accion, miTabla.Rows[posicion].ItemArray[0].ToString(),
                     txtUsuarioUsuarios.Text, txtClaveUsuarios.Text, txtNombreUsuarios.Text, txtDireccionUsuarios.Text, txtTelefonoUsuarios.Text
             };
-                String respuesta = objConexion.administrarUsuarios(usuarios);
+                String respuesta = objConexion.mantenimiento_usuarios(usuarios);
                 if (respuesta != "1")
                 {
                     MessageBox.Show(respuesta, "Error en el registro de usuarios", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -171,7 +171,7 @@ namespace academica
                 String[] docentes = {
                     "eliminar", miTabla.Rows[posicion].ItemArray[0].ToString()
                 };
-                String respuesta = objConexion.administrarUsuarios(usuarios);
+                String respuesta = objConexion.mantenimiento_usuarios(usuarios);
                 if (respuesta != "1")
                 {
                     MessageBox.Show(respuesta, "Error en el registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
