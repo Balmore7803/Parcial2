@@ -45,7 +45,7 @@ namespace academica
 
         private void UsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            usuarios objForm = new usuarios();
+            frm_usuario objForm = new frm_usuario();
             objForm.MdiParent = this;
             objForm.Show();
         }

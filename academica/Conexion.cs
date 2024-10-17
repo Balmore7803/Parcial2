@@ -86,7 +86,7 @@ namespace academica {
             String sql = "";
             if (datos[0] == "nuevo")
             {
-                sql = "INSERT INTO usuarios(usuario, clave, nombre, direccion, telefono, ) VALUES('" +
+                sql = "INSERT INTO usuarios(usuario, clave, nombre, direccion, telefono) VALUES('" +
                     datos[2] + "','" + datos[3] + "','" + datos[4] + "','" + datos[5] + "','" + datos[6] + "','" + datos[7] + "','" + datos[8] + "')";
             }
             else if (datos[0] == "modificar")
