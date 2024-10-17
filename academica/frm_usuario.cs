@@ -91,7 +91,7 @@ namespace academica
 
         private void btnPrimeroUsuarios_Click(object sender, EventArgs e)
         {
-            posicion = miTabla.Rows.Count - 0;
+            posicion = 0;
             mostrarDatosUsuarios();
         }
 
