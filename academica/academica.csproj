@@ -98,6 +98,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_academicaDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="db_academicaDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_academicaDataSet7.xsd</DependentUpon>
+    </Compile>
     <Compile Include="db_academicaDataSetUsuarios.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -250,6 +255,17 @@
     </None>
     <None Include="db_academicaDataSet6.xss">
       <DependentUpon>db_academicaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="db_academicaDataSet7.xsc">
+      <DependentUpon>db_academicaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="db_academicaDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_academicaDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_academicaDataSet7.xss">
+      <DependentUpon>db_academicaDataSet7.xsd</DependentUpon>
     </None>
     <None Include="db_academicaDataSetUsuarios.xsc">
       <DependentUpon>db_academicaDataSetUsuarios.xsd</DependentUpon>

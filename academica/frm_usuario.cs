@@ -28,7 +28,9 @@ namespace academica
 
         private void frm_usuario_Load(object sender, EventArgs e)
         {
-           
+            // TODO: esta línea de código carga datos en la tabla 'db_academicaDataSet7.usuarios' Puede moverla o quitarla según sea necesario.
+            this.usuariosTableAdapter.Fill(this.db_academicaDataSet7.usuarios);
+
             actualizarDs();
         }
         private void actualizarDs()
