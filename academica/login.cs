@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient; // Asegúrate de tener la referencia a System.Data.SqlClient
+using System.Data.SqlClient; 
 using System.Windows.Forms;
 
 
@@ -49,7 +49,11 @@ namespace academica
             if (AutenticarUsuario(nombreUsuario, contraseña))
             {
                 MessageBox.Show("¡Inicio de sesión exitoso!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Aquí puedes redirigir a la siguiente ventana o realizar otra acción
+
+                // Crear una instancia del formulario principal
+                principal mainForm = new principal(); 
+                this.Hide(); // Oculta el formulario de inicio de sesión
+                mainForm.Show(); // Muestra el formulario principal
             }
             else
             {
