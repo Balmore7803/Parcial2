@@ -52,7 +52,7 @@
             this.txtNombreUsuarios = new System.Windows.Forms.TextBox();
             this.lblUsuarioUsuarios = new System.Windows.Forms.Label();
             this.txtUsuarioUsuarios = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdDatosUsuarios = new System.Windows.Forms.DataGridView();
             this.db_academicaDataSetUsuarios = new academica.db_academicaDataSetUsuarios();
             this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usuariosTableAdapter = new academica.db_academicaDataSetUsuariosTableAdapters.usuariosTableAdapter();
@@ -65,7 +65,7 @@
             this.grbEdicionUsuarios.SuspendLayout();
             this.grbNavegacionUsuarios.SuspendLayout();
             this.grbDatosUsuarios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatosUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_academicaDataSetUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -305,22 +305,22 @@
             this.txtUsuarioUsuarios.Size = new System.Drawing.Size(100, 20);
             this.txtUsuarioUsuarios.TabIndex = 0;
             // 
-            // dataGridView1
+            // grdDatosUsuarios
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grdDatosUsuarios.AutoGenerateColumns = false;
+            this.grdDatosUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdDatosUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idUsuarioDataGridViewTextBoxColumn,
             this.usuarioDataGridViewTextBoxColumn,
             this.claveDataGridViewTextBoxColumn,
             this.nombreDataGridViewTextBoxColumn,
             this.direccionDataGridViewTextBoxColumn,
             this.telefonoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.usuariosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(433, 75);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 150);
-            this.dataGridView1.TabIndex = 29;
+            this.grdDatosUsuarios.DataSource = this.usuariosBindingSource;
+            this.grdDatosUsuarios.Location = new System.Drawing.Point(433, 75);
+            this.grdDatosUsuarios.Name = "grdDatosUsuarios";
+            this.grdDatosUsuarios.Size = new System.Drawing.Size(543, 150);
+            this.grdDatosUsuarios.TabIndex = 29;
             // 
             // db_academicaDataSetUsuarios
             // 
@@ -379,7 +379,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grdDatosUsuarios);
             this.Controls.Add(this.lblBuscarUsuarios);
             this.Controls.Add(this.txtBuscarUsuarios);
             this.Controls.Add(this.grbEdicionUsuarios);
@@ -393,7 +393,7 @@
             this.grbNavegacionUsuarios.PerformLayout();
             this.grbDatosUsuarios.ResumeLayout(false);
             this.grbDatosUsuarios.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDatosUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_academicaDataSetUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -425,7 +425,7 @@
         private System.Windows.Forms.TextBox txtNombreUsuarios;
         private System.Windows.Forms.Label lblUsuarioUsuarios;
         private System.Windows.Forms.TextBox txtUsuarioUsuarios;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdDatosUsuarios;
         private db_academicaDataSetUsuarios db_academicaDataSetUsuarios;
         private System.Windows.Forms.BindingSource usuariosBindingSource;
         private db_academicaDataSetUsuariosTableAdapters.usuariosTableAdapter usuariosTableAdapter;
