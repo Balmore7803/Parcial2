@@ -188,7 +188,7 @@ namespace academica
         private void filtrarDatos(String filtro)
         {
             DataView dv = miTabla.DefaultView;
-            dv.RowFilter = "codigo like '%" + filtro + "%' OR nombre like '%" + filtro + "%'";
+            dv.RowFilter = "usuario like '%" + filtro + "%' OR nombre like '%" + filtro + "%'";
             grdDatosUsuarios.DataSource = dv;
         }
 
