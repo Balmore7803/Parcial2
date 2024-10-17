@@ -185,25 +185,59 @@ namespace academica
                 }
             }
         }
-        private void filtrarDatos(String filtro)
+        private void filtrarDatos(string filtro)
         {
-            DataView dv = miTabla.DefaultView;
-            dv.RowFilter = "usuario like '%" + filtro + "%' OR nombre like '%" + filtro + "%'";
-            grdDatosUsuarios.DataSource = dv;
+            // Verificar que el filtro no esté vacío
+            if (string.IsNullOrWhiteSpace(filtro))
+            {
+                // Si el filtro está vacío, restablecer el filtro a mostrar todos los registros
+                miTabla.DefaultView.RowFilter = string.Empty; // Esto mostrará todos los registros
+            }
+            else
+            {
+                DataView dv = miTabla.DefaultView;
+                dv.RowFilter = "usuario LIKE '%" + filtro + "%' OR nombre LIKE '%" + filtro + "%'";
+                grdDatosUsuarios.DataSource = dv;
+            }
         }
 
         private void seleccionarUsuarios()
         {
-            try
+            if (grdDatosUsuarios.CurrentRow != null)
             {
-                posicion = miTabla.Rows.IndexOf(miTabla.Rows.Find(grdDatosUsuarios.CurrentRow.Cells["idUsuario"].Value.ToString()));
-                mostrarDatosUsuarios();
-            }
-            catch (Exception)
-            {
+                try
+                {
+                    string idUsuarioString = grdDatosUsuarios.CurrentRow.Cells["idUsuario"].Value.ToString().Trim();
 
+                    // Verificar que el idUsuario no esté vacío
+                    if (string.IsNullOrEmpty(idUsuarioString))
+                    {
+                        // Ignorar si idUsuario está vacío
+                        return;
+                    }
+
+                    // Buscar el registro en la tabla
+                    posicion = miTabla.Rows.IndexOf(miTabla.Rows.Find(idUsuarioString));
+
+                    // Solo llamar a mostrarDatosUsuarios si se encontró el registro
+                    if (posicion != -1)
+                    {
+                        mostrarDatosUsuarios();
+                    }
+                }
+                catch (Exception)
+                {
+                    // Se ignoran los errores sin hacer nada
+                }
+            }
+            else
+            {
+                // Aquí puedes ignorar o manejar el caso donde no hay una fila seleccionada
             }
         }
+
+
+
 
         private void txtBuscarUsuarios_KeyUp(object sender, KeyEventArgs e)
         {
@@ -212,3 +246,17 @@ namespace academica
         }
     }
 }
+
+
+
+
+
+            
+          
+              
+                
+                
+                   
+
+                 
+                  
