@@ -28,8 +28,9 @@ namespace academica
 
         private void frm_usuario_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'db_academicaDataSet7.usuarios' Puede moverla o quitarla según sea necesario.
-            this.usuariosTableAdapter.Fill(this.db_academicaDataSet7.usuarios);
+            // TODO: esta línea de código carga datos en la tabla '_db_academicaDataSet1.usuarios' Puede moverla o quitarla según sea necesario.
+            this.usuariosTableAdapter1.Fill(this._db_academicaDataSet1.usuarios);
+
 
             actualizarDs();
         }
@@ -38,7 +39,7 @@ namespace academica
             ds.Clear();
             ds = objConexion.obtenerDatos();
             miTabla = ds.Tables["usuarios"];
-            miTabla.PrimaryKey = new DataColumn[] { miTabla.Columns["idUsuarios"] };
+            miTabla.PrimaryKey = new DataColumn[] { miTabla.Columns["idUsuario"] };
             grdDatosUsuarios.DataSource = miTabla;
             mostrarDatosUsuarios();
         }
