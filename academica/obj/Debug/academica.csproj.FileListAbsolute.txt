@@ -72,3 +72,14 @@ C:\Users\joseb\OneDrive\Escritorio\PrograI-2024TareaCompleta-Semi\academica\acad
 C:\Users\joseb\OneDrive\Escritorio\PrograI-2024TareaCompleta-Semi\academica\academica\obj\Debug\academica.csproj.CoreCompileInputs.cache
 C:\Users\joseb\OneDrive\Escritorio\PrograI-2024TareaCompleta-Semi\academica\academica\obj\Debug\academica.exe
 C:\Users\joseb\OneDrive\Escritorio\PrograI-2024TareaCompleta-Semi\academica\academica\obj\Debug\academica.pdb
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.csproj.AssemblyReference.cache
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.docentes.resources
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.Form1.resources
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.frm_usuario.resources
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.materias.resources
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.principal.resources
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.Properties.Resources.resources
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.csproj.GenerateResource.cache
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.exe
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.pdb

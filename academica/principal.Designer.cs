@@ -37,7 +37,7 @@ namespace academica
             this.materiasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.notasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.UsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnxAcademica.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +75,7 @@ namespace academica
             this.materiasToolStripMenuItem,
             this.docentesToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.notasToolStripMenuItem});
+            this.UsuariosToolStripMenuItem});
             this.aplicacionToolStripMenuItem.Name = "aplicacionToolStripMenuItem";
             this.aplicacionToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.aplicacionToolStripMenuItem.Text = "Aplicacion";
@@ -109,12 +109,13 @@ namespace academica
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
-            // notasToolStripMenuItem
+            // UsuariosToolStripMenuItem
             // 
-            this.notasToolStripMenuItem.Name = "notasToolStripMenuItem";
-            this.notasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.notasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.notasToolStripMenuItem.Text = "Notas";
+            this.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem";
+            this.UsuariosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.UsuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.UsuariosToolStripMenuItem.Text = "Usuarios";
+            this.UsuariosToolStripMenuItem.Click += new System.EventHandler(this.UsuariosToolStripMenuItem_Click);
             // 
             // principal
             // 
@@ -145,6 +146,6 @@ namespace academica
         private System.Windows.Forms.ToolStripMenuItem materiasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem docentesToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem notasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem UsuariosToolStripMenuItem;
     }
 }
