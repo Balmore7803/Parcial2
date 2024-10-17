@@ -59,15 +59,15 @@
             this.dbacademicaDataSetUsuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dbacademicaDataSetUsuariosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.grdDatosUsuarios = new System.Windows.Forms.DataGridView();
-            this.usuariosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this._db_academicaDataSet1 = new academica._db_academicaDataSet1();
-            this.usuariosTableAdapter1 = new academica._db_academicaDataSet1TableAdapters.usuariosTableAdapter();
             this.idUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.claveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuariosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this._db_academicaDataSet1 = new academica._db_academicaDataSet1();
+            this.usuariosTableAdapter1 = new academica._db_academicaDataSet1TableAdapters.usuariosTableAdapter();
             this.grbEdicionUsuarios.SuspendLayout();
             this.grbNavegacionUsuarios.SuspendLayout();
             this.grbDatosUsuarios.SuspendLayout();
@@ -97,6 +97,7 @@
             this.txtBuscarUsuarios.Name = "txtBuscarUsuarios";
             this.txtBuscarUsuarios.Size = new System.Drawing.Size(347, 20);
             this.txtBuscarUsuarios.TabIndex = 28;
+            this.txtBuscarUsuarios.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscarUsuarios_KeyUp);
             // 
             // grbEdicionUsuarios
             // 
@@ -363,20 +364,6 @@
             this.grdDatosUsuarios.Size = new System.Drawing.Size(479, 150);
             this.grdDatosUsuarios.TabIndex = 29;
             // 
-            // usuariosBindingSource1
-            // 
-            this.usuariosBindingSource1.DataMember = "usuarios";
-            this.usuariosBindingSource1.DataSource = this._db_academicaDataSet1;
-            // 
-            // _db_academicaDataSet1
-            // 
-            this._db_academicaDataSet1.DataSetName = "_db_academicaDataSet1";
-            this._db_academicaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usuariosTableAdapter1
-            // 
-            this.usuariosTableAdapter1.ClearBeforeFill = true;
-            // 
             // idUsuarioDataGridViewTextBoxColumn
             // 
             this.idUsuarioDataGridViewTextBoxColumn.DataPropertyName = "idUsuario";
@@ -414,6 +401,20 @@
             this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono";
             this.telefonoDataGridViewTextBoxColumn.HeaderText = "telefono";
             this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            // 
+            // usuariosBindingSource1
+            // 
+            this.usuariosBindingSource1.DataMember = "usuarios";
+            this.usuariosBindingSource1.DataSource = this._db_academicaDataSet1;
+            // 
+            // _db_academicaDataSet1
+            // 
+            this._db_academicaDataSet1.DataSetName = "_db_academicaDataSet1";
+            this._db_academicaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usuariosTableAdapter1
+            // 
+            this.usuariosTableAdapter1.ClearBeforeFill = true;
             // 
             // frm_usuario
             // 

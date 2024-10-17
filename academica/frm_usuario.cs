@@ -191,5 +191,24 @@ namespace academica
             dv.RowFilter = "codigo like '%" + filtro + "%' OR nombre like '%" + filtro + "%'";
             grdDatosUsuarios.DataSource = dv;
         }
+
+        private void seleccionarUsuarios()
+        {
+            try
+            {
+                posicion = miTabla.Rows.IndexOf(miTabla.Rows.Find(grdDatosUsuarios.CurrentRow.Cells["idUsuario"].Value.ToString()));
+                mostrarDatosUsuarios();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void txtBuscarUsuarios_KeyUp(object sender, KeyEventArgs e)
+        {
+            filtrarDatos(txtBuscarUsuarios.Text);
+            seleccionarUsuarios();
+        }
     }
 }
