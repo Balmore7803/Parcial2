@@ -32,6 +32,7 @@
             this.txtContraseñaLogin = new System.Windows.Forms.TextBox();
             this.lblNombreLogin = new System.Windows.Forms.Label();
             this.txtNombreLogin = new System.Windows.Forms.TextBox();
+            this.btnIngresarLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblContraseñaLogin
@@ -68,11 +69,22 @@
             this.txtNombreLogin.Size = new System.Drawing.Size(251, 20);
             this.txtNombreLogin.TabIndex = 6;
             // 
+            // btnIngresarLogin
+            // 
+            this.btnIngresarLogin.Location = new System.Drawing.Point(269, 140);
+            this.btnIngresarLogin.Name = "btnIngresarLogin";
+            this.btnIngresarLogin.Size = new System.Drawing.Size(81, 24);
+            this.btnIngresarLogin.TabIndex = 10;
+            this.btnIngresarLogin.Text = "Ingresar";
+            this.btnIngresarLogin.UseVisualStyleBackColor = true;
+            this.btnIngresarLogin.Click += new System.EventHandler(this.btnIngresarLogin_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 208);
+            this.Controls.Add(this.btnIngresarLogin);
             this.Controls.Add(this.lblContraseñaLogin);
             this.Controls.Add(this.txtContraseñaLogin);
             this.Controls.Add(this.lblNombreLogin);
@@ -90,5 +102,6 @@
         private System.Windows.Forms.TextBox txtContraseñaLogin;
         private System.Windows.Forms.Label lblNombreLogin;
         private System.Windows.Forms.TextBox txtNombreLogin;
+        private System.Windows.Forms.Button btnIngresarLogin;
     }
 }
