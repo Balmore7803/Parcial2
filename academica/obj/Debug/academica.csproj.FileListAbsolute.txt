@@ -83,3 +83,4 @@ C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.csproj.Generate
 C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.csproj.CoreCompileInputs.cache
 C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.exe
 C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.pdb
+C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.login.resources

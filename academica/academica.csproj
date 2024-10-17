@@ -98,6 +98,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_academicaDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="db_academicaDataSetUsuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_academicaDataSetUsuarios.xsd</DependentUpon>
+    </Compile>
     <Compile Include="docentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +250,17 @@
     </None>
     <None Include="db_academicaDataSet6.xss">
       <DependentUpon>db_academicaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="db_academicaDataSetUsuarios.xsc">
+      <DependentUpon>db_academicaDataSetUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="db_academicaDataSetUsuarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_academicaDataSetUsuarios.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_academicaDataSetUsuarios.xss">
+      <DependentUpon>db_academicaDataSetUsuarios.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

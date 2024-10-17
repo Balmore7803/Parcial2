@@ -38,7 +38,7 @@
             // 
             this.lblContraseñaLogin.AutoSize = true;
             this.lblContraseñaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseñaLogin.Location = new System.Drawing.Point(158, 114);
+            this.lblContraseñaLogin.Location = new System.Drawing.Point(130, 91);
             this.lblContraseñaLogin.Name = "lblContraseñaLogin";
             this.lblContraseñaLogin.Size = new System.Drawing.Size(111, 24);
             this.lblContraseñaLogin.TabIndex = 9;
@@ -46,7 +46,7 @@
             // 
             // txtContraseñaLogin
             // 
-            this.txtContraseñaLogin.Location = new System.Drawing.Point(275, 114);
+            this.txtContraseñaLogin.Location = new System.Drawing.Point(247, 91);
             this.txtContraseñaLogin.Name = "txtContraseñaLogin";
             this.txtContraseñaLogin.Size = new System.Drawing.Size(175, 20);
             this.txtContraseñaLogin.TabIndex = 8;
@@ -55,7 +55,7 @@
             // 
             this.lblNombreLogin.AutoSize = true;
             this.lblNombreLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreLogin.Location = new System.Drawing.Point(158, 70);
+            this.lblNombreLogin.Location = new System.Drawing.Point(130, 47);
             this.lblNombreLogin.Name = "lblNombreLogin";
             this.lblNombreLogin.Size = new System.Drawing.Size(84, 24);
             this.lblNombreLogin.TabIndex = 7;
@@ -63,7 +63,7 @@
             // 
             // txtNombreLogin
             // 
-            this.txtNombreLogin.Location = new System.Drawing.Point(275, 74);
+            this.txtNombreLogin.Location = new System.Drawing.Point(247, 51);
             this.txtNombreLogin.Name = "txtNombreLogin";
             this.txtNombreLogin.Size = new System.Drawing.Size(251, 20);
             this.txtNombreLogin.TabIndex = 6;

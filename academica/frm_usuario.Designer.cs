@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grdDatosDocentes = new System.Windows.Forms.DataGridView();
+            this.components = new System.ComponentModel.Container();
             this.lblBuscarUsuarios = new System.Windows.Forms.Label();
             this.txtBuscarUsuarios = new System.Windows.Forms.TextBox();
             this.grbEdicionUsuarios = new System.Windows.Forms.GroupBox();
@@ -52,22 +52,23 @@
             this.txtNombreUsuarios = new System.Windows.Forms.TextBox();
             this.lblUsuarioUsuarios = new System.Windows.Forms.Label();
             this.txtUsuarioUsuarios = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.grdDatosDocentes)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.db_academicaDataSetUsuarios = new academica.db_academicaDataSetUsuarios();
+            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usuariosTableAdapter = new academica.db_academicaDataSetUsuariosTableAdapters.usuariosTableAdapter();
+            this.idUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.claveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbEdicionUsuarios.SuspendLayout();
             this.grbNavegacionUsuarios.SuspendLayout();
             this.grbDatosUsuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_academicaDataSetUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grdDatosDocentes
-            // 
-            this.grdDatosDocentes.AllowUserToAddRows = false;
-            this.grdDatosDocentes.AllowUserToDeleteRows = false;
-            this.grdDatosDocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdDatosDocentes.Location = new System.Drawing.Point(410, 72);
-            this.grdDatosDocentes.Name = "grdDatosDocentes";
-            this.grdDatosDocentes.ReadOnly = true;
-            this.grdDatosDocentes.Size = new System.Drawing.Size(481, 246);
-            this.grdDatosDocentes.TabIndex = 29;
             // 
             // lblBuscarUsuarios
             // 
@@ -223,7 +224,7 @@
             // 
             this.lblClaveUsuarios.AutoSize = true;
             this.lblClaveUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClaveUsuarios.Location = new System.Drawing.Point(12, 75);
+            this.lblClaveUsuarios.Location = new System.Drawing.Point(12, 87);
             this.lblClaveUsuarios.Name = "lblClaveUsuarios";
             this.lblClaveUsuarios.Size = new System.Drawing.Size(62, 24);
             this.lblClaveUsuarios.TabIndex = 9;
@@ -231,7 +232,7 @@
             // 
             // txtClaveUsuarios
             // 
-            this.txtClaveUsuarios.Location = new System.Drawing.Point(131, 82);
+            this.txtClaveUsuarios.Location = new System.Drawing.Point(131, 94);
             this.txtClaveUsuarios.Name = "txtClaveUsuarios";
             this.txtClaveUsuarios.Size = new System.Drawing.Size(251, 20);
             this.txtClaveUsuarios.TabIndex = 8;
@@ -291,7 +292,7 @@
             // 
             this.lblUsuarioUsuarios.AutoSize = true;
             this.lblUsuarioUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioUsuarios.Location = new System.Drawing.Point(12, 34);
+            this.lblUsuarioUsuarios.Location = new System.Drawing.Point(12, 49);
             this.lblUsuarioUsuarios.Name = "lblUsuarioUsuarios";
             this.lblUsuarioUsuarios.Size = new System.Drawing.Size(79, 24);
             this.lblUsuarioUsuarios.TabIndex = 1;
@@ -299,17 +300,86 @@
             // 
             // txtUsuarioUsuarios
             // 
-            this.txtUsuarioUsuarios.Location = new System.Drawing.Point(131, 41);
+            this.txtUsuarioUsuarios.Location = new System.Drawing.Point(131, 56);
             this.txtUsuarioUsuarios.Name = "txtUsuarioUsuarios";
             this.txtUsuarioUsuarios.Size = new System.Drawing.Size(100, 20);
             this.txtUsuarioUsuarios.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idUsuarioDataGridViewTextBoxColumn,
+            this.usuarioDataGridViewTextBoxColumn,
+            this.claveDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.direccionDataGridViewTextBoxColumn,
+            this.telefonoDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.usuariosBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(433, 75);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(543, 150);
+            this.dataGridView1.TabIndex = 29;
+            // 
+            // db_academicaDataSetUsuarios
+            // 
+            this.db_academicaDataSetUsuarios.DataSetName = "db_academicaDataSetUsuarios";
+            this.db_academicaDataSetUsuarios.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usuariosBindingSource
+            // 
+            this.usuariosBindingSource.DataMember = "usuarios";
+            this.usuariosBindingSource.DataSource = this.db_academicaDataSetUsuarios;
+            // 
+            // usuariosTableAdapter
+            // 
+            this.usuariosTableAdapter.ClearBeforeFill = true;
+            // 
+            // idUsuarioDataGridViewTextBoxColumn
+            // 
+            this.idUsuarioDataGridViewTextBoxColumn.DataPropertyName = "idUsuario";
+            this.idUsuarioDataGridViewTextBoxColumn.HeaderText = "idUsuario";
+            this.idUsuarioDataGridViewTextBoxColumn.Name = "idUsuarioDataGridViewTextBoxColumn";
+            this.idUsuarioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idUsuarioDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // usuarioDataGridViewTextBoxColumn
+            // 
+            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "usuario";
+            this.usuarioDataGridViewTextBoxColumn.HeaderText = "usuario";
+            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
+            // 
+            // claveDataGridViewTextBoxColumn
+            // 
+            this.claveDataGridViewTextBoxColumn.DataPropertyName = "clave";
+            this.claveDataGridViewTextBoxColumn.HeaderText = "clave";
+            this.claveDataGridViewTextBoxColumn.Name = "claveDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "direccion";
+            this.direccionDataGridViewTextBoxColumn.HeaderText = "direccion";
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono";
+            this.telefonoDataGridViewTextBoxColumn.HeaderText = "telefono";
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
             // 
             // frm_usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 450);
-            this.Controls.Add(this.grdDatosDocentes);
+            this.ClientSize = new System.Drawing.Size(998, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblBuscarUsuarios);
             this.Controls.Add(this.txtBuscarUsuarios);
             this.Controls.Add(this.grbEdicionUsuarios);
@@ -318,20 +388,20 @@
             this.Name = "frm_usuario";
             this.Text = "frm_usuario";
             this.Load += new System.EventHandler(this.frm_usuario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdDatosDocentes)).EndInit();
             this.grbEdicionUsuarios.ResumeLayout(false);
             this.grbNavegacionUsuarios.ResumeLayout(false);
             this.grbNavegacionUsuarios.PerformLayout();
             this.grbDatosUsuarios.ResumeLayout(false);
             this.grbDatosUsuarios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_academicaDataSetUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView grdDatosDocentes;
         private System.Windows.Forms.Label lblBuscarUsuarios;
         private System.Windows.Forms.TextBox txtBuscarUsuarios;
         private System.Windows.Forms.GroupBox grbEdicionUsuarios;
@@ -355,5 +425,15 @@
         private System.Windows.Forms.TextBox txtNombreUsuarios;
         private System.Windows.Forms.Label lblUsuarioUsuarios;
         private System.Windows.Forms.TextBox txtUsuarioUsuarios;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private db_academicaDataSetUsuarios db_academicaDataSetUsuarios;
+        private System.Windows.Forms.BindingSource usuariosBindingSource;
+        private db_academicaDataSetUsuariosTableAdapters.usuariosTableAdapter usuariosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idUsuarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn claveDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
     }
 }
