@@ -84,3 +84,10 @@ C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.csproj.CoreComp
 C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.exe
 C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.pdb
 C:\Users\PC\Source\Repos\Parcial2s\academica\obj\Debug\academica.login.resources
+C:\Users\PC\Source\Repos\Parcial2s\academica\bin\Debug\db.academica.mdf
+C:\Users\PC\Source\Repos\Parcial2s\academica\bin\Debug\db.academica_log.ldf
+C:\Users\PC\Source\Repos\Parcial2s\academica\bin\Debug\db_academica.mdf
+C:\Users\PC\Source\Repos\Parcial2s\academica\bin\Debug\db_academica_log.ldf
+C:\Users\PC\Source\Repos\Parcial2s\academica\bin\Debug\academica.exe.config
+C:\Users\PC\Source\Repos\Parcial2s\academica\bin\Debug\academica.exe
+C:\Users\PC\Source\Repos\Parcial2s\academica\bin\Debug\academica.pdb

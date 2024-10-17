@@ -113,7 +113,7 @@ namespace academica
             }
             else
             {//Guardar
-                String[] docentes = {
+                String[] usuarios = {
                     accion, miTabla.Rows[posicion].ItemArray[0].ToString(),
                     txtUsuarioUsuarios.Text, txtClaveUsuarios.Text, txtNombreUsuarios.Text, txtDireccionUsuarios.Text, txtTelefonoUsuarios.Text
             };
@@ -168,7 +168,7 @@ namespace academica
             if (MessageBox.Show("Esta seguro de eliminar a " + txtNombreUsuarios.Text.Trim() + "?", "Eliminar usuarios", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                String[] docentes = {
+                String[] usuarios = {
                     "eliminar", miTabla.Rows[posicion].ItemArray[0].ToString()
                 };
                 String respuesta = objConexion.mantenimiento_usuarios(usuarios);
